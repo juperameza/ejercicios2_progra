@@ -1,7 +1,8 @@
+//JUan Pedro Ramirez Meza 20171112 6H 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define N 1000 // Definimos N como 20
+#define N 1150 // Definimos N como 00 y aumentaremos de 10 en 10 hasta 100
 
 int main()
 {

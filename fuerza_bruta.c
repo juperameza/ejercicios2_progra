@@ -1,17 +1,13 @@
+//JUan Pedro Ramirez Meza 20171112 6H
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define N 20000
-
+#define N 1500 // Definimos N como 1000 y aumentaremos de 100 en 100 hasta 1000
 int is_prime(int n)
 {
     int i;
-    
-    if(n < 2)
-    {
-        return 0;
-    }
-    
+
+
     for(i=2; i<=n/2; i++)
     {
         if(n%i == 0)
@@ -19,7 +15,7 @@ int is_prime(int n)
             return 0;
         }
     }
-    
+
     return 1;
 }
 
@@ -28,12 +24,9 @@ int main()
 {
     clock_t start, end;
      double time_taken;
-      int i, j;
-    int primes[N+1]; // Creamos una lista para almacenar los números primos
-    primes[0] = 0; // Marcar 0 y 1 como no primos
-    primes[1] = 0;
+      int i;
     /* code */
-    printf("Los números primos menores a con metodo de fuerza bruta %d son:\n", N);
+    printf("Los números primos menores a %d con metodo de fuerza bruta  son:\n", N);
     start = clock();
     for(i=2; i<=N; i++)
     {

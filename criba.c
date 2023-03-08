@@ -1,7 +1,9 @@
+//JUan Pedro Ramirez Meza 20171112 6H
+// Facultad de telematica programacion paralela
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define N 20000
+#define N 150000 // Definimos N como 100 y aumentaremos de 100 en 100 hasta 1000
 
 
 int main()
@@ -12,7 +14,7 @@ int main()
     int primes[N+1]; // Creamos una lista para almacenar los números primos
     primes[0] = 0; // Marcar 0 y 1 como no primos
     primes[1] = 0;
-    printf("Los números primos menores a con metodo de criba de eratostenes %d son:\n", N);
+    printf("Los números primos menores a %d con metodo de criba de eratostenes  son:\n", N);
     start = clock();
     // Inicializar la lista con 1 (todos son primos inicialmente)
     for(i=2; i<=N; i++)
